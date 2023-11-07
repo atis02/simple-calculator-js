@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.js"
+        integrity="sha512-BbVEDjbqdN3Eow8+empLMrJlxXRj5nEitiCAK5A1pUr66+jLVejo3PmjIaucRnjlB0P9R3rBUs3g5jXc8ti+fQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.min.js"
+        integrity="sha512-iphNRh6dPbeuPGIrQbCdbBF/qcqadKWLa35YPVfMZMHBSI6PLJh1om2xCTWhpVpmUyb4IvVS9iYnnYMkleVXLA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../js/calculator.js" defer></script>
+    <link rel="stylesheet" href="../style/style.css">
+
+</head>
+
+<body class="main" id='main3'>
+    <div class="main2">
+        <div class="operations">
+
+            <input type="text" id="result" onfocus="" placeholder="   0">
+            <button onclick="clear2()" class="clear">C</button>
+
+        </div>
+
+        <div class="dial-elements">
+            <div class="dial-numbers">
+
+                <button class="dial-number" onclick="dis('1')">
+                    <span class="number-desc">1</span>
+                </button>
+                <button class="dial-number" onclick="dis('2')">
+                    <span class="number-desc">2</span>
+                </button>
+                <button class="dial-number" onclick="dis('3')">
+                    <span class="number-desc">3</span>
+                </button>
+                <button class="dial-number" onclick="dis('4')">
+                    <span class="number-desc">4</span>
+                </button>
+                <button class="dial-number" onclick="dis('5')">
+                    <span class="number-desc">5</span>
+                </button>
+                <button class="dial-number" onclick="dis('6')">
+                    <span class="number-desc">6</span>
+                </button>
+                <button class="dial-number" onclick="dis('7')">
+                    <span class="number-desc">7</span>
+                </button>
+                <button class="dial-number" onclick="dis('8')">
+                    <span class="number-desc">8</span>
+                </button>
+                <button class="dial-number" onclick="dis('9')">
+                    <span class="number-desc">9</span>
+                </button>
+                <button class="dial-number" onclick="dis('0')">
+                    <span class="number-desc">0</span>
+                </button>
+                <button class="dial-number" onclick="solve();">
+                    <span class="number-desc">=</span>
+                </button>
+            </div>
+            <div class="dial-elem">
+                <button class="dial-elems" onclick="dis('*')"><span class="desc">*</span></button>
+                <button class="dial-elems" onclick="dis('/')"><span class="desc">/</span></button>
+                <button class="dial-elems" onclick="dis('-')"><span class="desc">-</span></button>
+                <button class="dial-elems" onclick="dis('+')"><span class="desc">+</span></button>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
